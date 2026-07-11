@@ -521,10 +521,6 @@ async function handleSubscriptionRequest(request, user, customDomain, piu, ipv4E
         }
     }
 
-    // 原生地址
-    const nativeList = [{ ip: workerDomain, isp: '原生地址' }];
-    await addNodesFromList(nativeList);
-
     // 优选域名
     if (epd) {
         const domainList = directDomains.map(d => ({ ip: d.domain, isp: d.name || d.domain }));
