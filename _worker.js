@@ -33,10 +33,7 @@ const directDomains = [
 ];
 
 // 默认优选IP来源URL
-const IPURLs = [
-    'https://raw.githubusercontent.com/qwer-search/bestip/refs/heads/main/kejilandbestip.txt',
-    'https://ip.weiaitao.dpdns.org/ip.txt'
-];
+const defaultIPURL = 'https://ip.weiaitao.dpdns.org/ip.txt';
 
 // UUID验证
 function isValidUUID(str) {
